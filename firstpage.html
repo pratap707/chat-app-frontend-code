@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-TTrpTLuAYjTMAiuE4a2MqrVkzPO3K01iJtQu3ImVk9EaaO/Cssl1DuCvohIwm2M4LdfgVsBkbiiyKY7gK==" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #F0F0F0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #202020;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .chat-bubble {
+            background-color: #F0F0F0;
+            border-radius: 10px;
+            padding: 10px;
+            margin-bottom: 10px;
+            position: relative;
+        }
+
+        .chat-bubble::before {
+            content: "";
+            position: absolute;
+            top: -5px;
+            left: 10px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: transparent transparent #F0F0F0 transparent;
+        }
+
+        .chat-bubble.right {
+            text-align: right;
+        }
+
+        .chat-bubble.right::before {
+            left: auto;
+            right: 10px;
+            border-color: transparent #F0F0F0 transparent transparent;
+        }
+
+        .btn-primary {
+            background-color: #FFC107;
+            border-color: #FFC107;
+        }
+
+        .btn-primary:hover {
+            background-color: #E0A800;
+            border-color: #E0A800;
+        }
+
+        .hashtag {
+            color: #FFC107;
+            font-size: 2rem;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="chat-bubble">
+            Hola! Nice to hear from you.
+        </div>
+        <div class="chat-bubble right">
+            And you, too!
+        </div>
+        <div class="chat-bubble">
+            Let's meet?
+            <br>
+            8 at J's?
+        </div>
+        <div class="chat-bubble right">
+            See you!
+        </div>
+
+        <h2 class="hashtag">#Checked</h2>
+        <p>Talk, text, and share as much as you want - all of it for free.</p>
+
+        <button type="button" class="btn btn-primary">Get Started</button>
+        <p>I already have an account.</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6ZYgfuA2AA0+9MZqF93AZvh00<ctrl62>d>
+</html>

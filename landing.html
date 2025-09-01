@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat Design</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: black;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .container {
+      width: 350px;
+      background-color: black;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .chat {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .bubble {
+      padding: 10px 15px;
+      border-radius: 20px;
+      max-width: 80%;
+      position: relative;
+    }
+
+    .bubble-yellow {
+      background-color: #ffcc00;
+      color: black;
+      align-self: flex-start;
+    }
+
+    .bubble-white {
+      background-color: white;
+      color: black;
+      align-self: flex-end;
+    }
+
+    .bubble-orange {
+      background-color: #ff8c42;
+      color: black;
+      align-self: flex-start;
+    }
+
+    .bubble-blue {
+      background-color: #00aaff;
+      color: white;
+      align-self: flex-end;
+    }
+
+    .footer {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .footer h1 {
+      font-size: 24px;
+      margin: 0;
+    }
+
+    .footer p {
+      font-size: 14px;
+      margin: 10px 0;
+    }
+
+    .button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      text-align: center;
+      background-color: black;
+      color: white;
+      border: 2px solid white;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .button:hover {
+      background-color: white;
+      color: black;
+    }
+
+    .footer a {
+      color: white;
+      text-decoration: underline;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="chat">
+      <div class="bubble bubble-yellow">Hola!<br>Nice to hear from you.</div>
+      <div class="bubble bubble-white">And you, too!</div>
+      <div class="bubble bubble-orange">Let's meet?<br>📅 8 at J's?</div>
+      <div class="bubble bubble-blue">👍 See you!</div>
+    </div>
+    <div class="footer">
+      <h1>#Checked</h1>
+      <p>Talk, text, and share as much as you want — all of it for free.</p>
+      <a href="#" class="button">Get Started</a>
+      <a href="#">I already have an account.</a>
+    </div>
+  </div>
+</body>
+</html>
+
